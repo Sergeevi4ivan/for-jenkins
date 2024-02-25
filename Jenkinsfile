@@ -11,7 +11,7 @@ pipeline {
         stage('push repo to remote host') {
             steps {
                 echo 'connect to remote host and pull down the latest version'
-                sh 'sudo git -C /home/ivan/IdeaProjects/for-jenkins pull'
+                sh 'sudo git -C /home/ivan/IdeaProjects/for-jenkins/html pull'
             }
     }
 }
