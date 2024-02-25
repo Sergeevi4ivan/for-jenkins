@@ -11,7 +11,7 @@ pipeline {
         stage('push repo to remote host') {
             steps {
                 echo 'connect to remote host and pull down the latest version'
-                sh 'ssh -i ~/working.pem ec2-user@35.176.182.32 sudo git -C /var/www/html pull'
+                sh 'ssh -i git@github.com:Sergeevi4ivan/for-jenkins.git sudo git -C /home/ivan/IdeaProjects/for-jenkins pull'
             }
         }
         
