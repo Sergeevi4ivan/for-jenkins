@@ -13,8 +13,5 @@ pipeline {
                 echo 'connect to remote host and pull down the latest version'
                 sh 'ssh -i git@github.com:Sergeevi4ivan/for-jenkins.git sudo git -C /home/ivan/IdeaProjects/for-jenkins pull'
             }
-        }
-        
-        }
     }
 }
