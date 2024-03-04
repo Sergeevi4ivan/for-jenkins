@@ -11,7 +11,7 @@ pipeline {
         stage('push repo to remote host') {
             steps {
                 echo 'connect to remote host and pull down the latest version'
-                sh 'git /opt/tomcat/webapps/forTestJenkins pull'
+                sh 'git pull /opt/tomcat/webapps/forTestJenkins'
             }
     }
 }
