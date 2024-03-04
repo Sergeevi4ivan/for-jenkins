@@ -11,7 +11,7 @@ pipeline {
         stage('push repo to remote host') {
             steps {
                 echo 'connect to remote host and pull down the latest version'
-                sh 'sudo ivan:1@git -C /opt/tomcat/webapps/forTestJenkins pull'
+                sh 'cat password.txt | sudo -S /opt/tomcat/webapps/forTestJenkins pull'
             }
     }
 }
